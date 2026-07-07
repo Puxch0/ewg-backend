@@ -2,7 +2,7 @@ import express from "express";
 import { HttpsProxyAgent } from "https-proxy-agent";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 // Tu proxy residencial Webshare
 const proxy = "http://lwtpddyu:omq5azezd0c7@9.142.198.187:5854/";
