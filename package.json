@@ -1,0 +1,13 @@
+{
+  "name": "ewg-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "https-proxy-agent": "^7.0.2"
+  }
+}
