@@ -2,6 +2,10 @@ import express from "express";
 import { HttpsProxyAgent } from "https-proxy-agent";
 
 const app = express();
+
+// Railway SIEMPRE asigna un puerto dinámico.
+// Nunca uses 3000, 8080, etc.
+// Usa SOLO process.env.PORT.
 const PORT = process.env.PORT;
 
 // Tu proxy residencial Webshare
@@ -56,3 +60,4 @@ app.get("/api/ewg", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
 });
+
